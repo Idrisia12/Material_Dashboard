@@ -28,7 +28,7 @@ const data = [
     ref: 'CDD1049',
     amount: 30.5,
     customer: {
-      name: 'Ekaterina Tankova'
+      name: 'Ordered Rice'
     },
     createdAt: 1555016400000,
     status: 'pending'
@@ -38,7 +38,7 @@ const data = [
     ref: 'CDD1048',
     amount: 25.1,
     customer: {
-      name: 'Cao Yu'
+      name: 'Ordered Beans'
     },
     createdAt: 1555016400000,
     status: 'delivered'
@@ -48,40 +48,40 @@ const data = [
     ref: 'CDD1047',
     amount: 10.99,
     customer: {
-      name: 'Alexa Richardson'
+      name: '#INVEST300 Cancelled'
     },
     createdAt: 1554930000000,
     status: 'refunded'
   },
   {
     id: uuid(),
-    ref: 'CDD1046',
-    amount: 96.43,
+    ref: 'CDD1047',
+    amount: 10.99,
     customer: {
-      name: 'Anje Keizer'
+      name: '#INVEST300 Cancelled'
     },
-    createdAt: 1554757200000,
-    status: 'pending'
+    createdAt: 1554930000000,
+    status: 'refunded'
   },
   {
     id: uuid(),
-    ref: 'CDD1045',
-    amount: 32.54,
+    ref: 'CDD1047',
+    amount: 10.99,
     customer: {
-      name: 'Clarke Gillebert'
+      name: '#INVEST300 Cancelled'
     },
-    createdAt: 1554670800000,
-    status: 'delivered'
+    createdAt: 1554930000000,
+    status: 'refunded'
   },
   {
     id: uuid(),
-    ref: 'CDD1044',
-    amount: 16.76,
+    ref: 'CDD1047',
+    amount: 10.99,
     customer: {
-      name: 'Adam Denisov'
+      name: '#INVEST300 Cancelled'
     },
-    createdAt: 1554670800000,
-    status: 'delivered'
+    createdAt: 1554930000000,
+    status: 'refunded'
   }
 ];
 
@@ -101,7 +101,7 @@ const LatestOrders = ({ className, ...rest }) => {
       className={clsx(classes.root, className)}
       {...rest}
     >
-      <CardHeader title="Latest Orders" />
+      <CardHeader title="Recent Activities" />
       <Divider />
       <PerfectScrollbar>
         <Box minWidth={800}>
@@ -109,10 +109,7 @@ const LatestOrders = ({ className, ...rest }) => {
             <TableHead>
               <TableRow>
                 <TableCell>
-                  Order Ref
-                </TableCell>
-                <TableCell>
-                  Customer
+                  Activity
                 </TableCell>
                 <TableCell sortDirection="desc">
                   <Tooltip
@@ -138,9 +135,6 @@ const LatestOrders = ({ className, ...rest }) => {
                   hover
                   key={order.id}
                 >
-                  <TableCell>
-                    {order.ref}
-                  </TableCell>
                   <TableCell>
                     {order.customer.name}
                   </TableCell>

@@ -7,7 +7,6 @@ import {
   Card,
   CardContent,
   Grid,
-  LinearProgress,
   Typography,
   makeStyles,
   colors
@@ -45,13 +44,13 @@ const TasksProgress = ({ className, ...rest }) => {
               gutterBottom
               variant="h6"
             >
-              TASKS PROGRESS
+              TOTAL ORDER
             </Typography>
             <Typography
               color="textPrimary"
               variant="h3"
             >
-              75.5%
+              0
             </Typography>
           </Grid>
           <Grid item>
@@ -61,10 +60,7 @@ const TasksProgress = ({ className, ...rest }) => {
           </Grid>
         </Grid>
         <Box mt={3}>
-          <LinearProgress
-            value={75.5}
-            variant="determinate"
-          />
+
         </Box>
       </CardContent>
     </Card>

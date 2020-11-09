@@ -7,6 +7,7 @@ import {
 import Page from 'src/components/Page';
 import Results from './Results';
 import Toolbar from './Toolbar';
+import AddBank from './AddBank';
 import data from './data';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,13 +26,15 @@ const CustomerListView = () => {
   return (
     <Page
       className={classes.root}
-      title="Customers"
+      title="QuadAg | Bank Accounts"
     >
       <Container maxWidth={false}>
         <Toolbar />
         <Box mt={3}>
           <Results customers={customers} />
         </Box>
+        <br />
+        <AddBank />
       </Container>
     </Page>
   );

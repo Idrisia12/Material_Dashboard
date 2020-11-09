@@ -19,9 +19,11 @@ const useStyles = makeStyles(({
 const Password = ({ className, ...rest }) => {
   const classes = useStyles();
   const [values, setValues] = useState({
-    old: '',
-    new: '',
-    confirm: '',
+    name: '',
+    email: '',
+    phone: '',
+    product: '',
+    weight: ''
   });
 
   const handleChange = (event) => {
@@ -38,39 +40,59 @@ const Password = ({ className, ...rest }) => {
     >
       <Card>
         <CardHeader
-          subheader="Update password"
-          title="Password"
+          subheader="Fill and submit form to get products quote sent to your mail. Thank you."
+          title="Retail Form"
         />
         <Divider />
         <CardContent>
           <TextField
             fullWidth
-            label="Password"
+            label="Name"
             margin="normal"
-            name="old"
+            name="name"
             onChange={handleChange}
-            type="password"
-            value={values.old}
+            type="text"
+            value={values.name}
             variant="outlined"
           />
           <TextField
             fullWidth
-            label="New Password"
+            label="Email"
             margin="normal"
-            name="new"
+            name="email"
             onChange={handleChange}
-            type="password"
-            value={values.new}
+            type="text"
+            value={values.email}
             variant="outlined"
           />
           <TextField
             fullWidth
-            label="Confirm Password"
+            label="Phone Number"
             margin="normal"
-            name="confirm"
+            name="phone"
             onChange={handleChange}
-            type="password"
-            value={values.confirm}
+            type="text"
+            value={values.phone}
+            variant="outlined"
+          />
+          <TextField
+            fullWidth
+            label="Product Name"
+            margin="normal"
+            name="product"
+            onChange={handleChange}
+            type="text"
+            value={values.product}
+            variant="outlined"
+          />
+          <TextField
+            fullWidth
+            label="Weight / Quantity"
+            margin="normal"
+            name="weight"
+            onChange={handleChange}
+            type="text"
+            value={values.weight}
             variant="outlined"
           />
         </CardContent>
@@ -84,7 +106,7 @@ const Password = ({ className, ...rest }) => {
             color="primary"
             variant="contained"
           >
-            Update
+            Request A Quote
           </Button>
         </Box>
       </Card>

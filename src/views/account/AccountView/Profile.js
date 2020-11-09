@@ -16,11 +16,10 @@ import {
 
 const user = {
   avatar: '/static/images/avatars/avatar_6.png',
-  city: 'Los Angeles',
-  country: 'USA',
-  jobTitle: 'Senior Developer',
-  name: 'Katarina Smith',
-  timezone: 'GTM-7'
+  city: 'Lagos',
+  country: 'Nigeria',
+  jobTitle: 'Banker',
+  name: 'Akins Precious',
 };
 
 const useStyles = makeStyles(() => ({
@@ -67,7 +66,7 @@ const Profile = ({ className, ...rest }) => {
             color="textSecondary"
             variant="body1"
           >
-            {`${moment().format('hh:mm A')} ${user.timezone}`}
+            {`${moment().format('hh:mm A')}`}
           </Typography>
         </Box>
       </CardContent>

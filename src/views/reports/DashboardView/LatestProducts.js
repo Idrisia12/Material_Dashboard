@@ -22,8 +22,8 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 const data = [
   {
     id: uuid(),
-    name: 'Dropbox',
-    imageUrl: '/static/images/products/product_1.png',
+    name: 'Yam',
+    imageUrl: '/static/images/products/yam.jpg',
     updatedAt: moment().subtract(2, 'hours')
   },
   {

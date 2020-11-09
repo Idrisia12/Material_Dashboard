@@ -5,7 +5,7 @@ import {
   makeStyles
 } from '@material-ui/core';
 import Page from 'src/components/Page';
-import Notifications from './Notifications';
+/*import Notifications from './Notifications';*/
 import Password from './Password';
 
 const useStyles = makeStyles((theme) => ({
@@ -23,10 +23,9 @@ const SettingsView = () => {
   return (
     <Page
       className={classes.root}
-      title="QuadAg | Settings"
+      title="QuadAg | Retail Program"
     >
       <Container maxWidth="lg">
-        <Notifications />
         <Box mt={3}>
           <Password />
         </Box>

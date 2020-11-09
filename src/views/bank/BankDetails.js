@@ -15,10 +15,6 @@ import {
 
 const states = [
   {
-    value: 'Abuja',
-    label: 'Abuja'
-  },
-  {
     value: 'Abia',
     label: 'Abia'
   },
@@ -49,131 +45,19 @@ const states = [
   {
     value: 'Borno',
     label: 'Borno'
-  },
-  {
-    value: 'Cross River',
-    label: 'Cross River'
-  },
-  {
-    value: 'Delta',
-    label: 'Delta'
-  },
-  {
-    value: 'Ebonyi',
-    label: 'Ebonyi'
-  },
-  {
-    value: 'Edo',
-    label: 'Edo'
-  },
-  {
-    value: 'Ekiti',
-    label: 'Ekiti'
-  },
-  {
-    value: 'Enugu',
-    label: 'Enugu'
-  },
-  {
-    value: 'Gombe',
-    label: 'Gombe'
-  },
-  {
-    value: 'Imo',
-    label: 'Imo'
-  },
-  {
-    value: 'Jigawa',
-    label: 'Jigawa'
-  },
-  {
-    value: 'Kaduna',
-    label: 'Kaduna'
-  },
-  {
-    value: 'Kano',
-    label: 'Kano'
-  },
-  {
-    value: 'Katsina',
-    label: 'Katsina'
-  },
-  {
-    value: 'Kebbi',
-    label: 'Kebbi'
-  },
-  {
-    value: 'Kogi',
-    label: 'Kogi'
-  },
-  {
-    value: 'Kwara',
-    label: 'Kwara'
-  },
-  {
-    value: 'Lagos',
-    label: 'Lagos'
-  },
-  {
-    value: 'Nasarawa',
-    label: 'Nasarawa'
-  },
-  {
-    value: 'Niger',
-    label: 'Niger'
-  },
-  {
-    value: 'Ogun',
-    label: 'Ogun'
-  },
-  {
-    value: 'Ondo',
-    label: 'Ondo'
-  },
-  {
-    value: 'Osun',
-    label: 'Osun'
-  },
-  {
-    value: 'Oyo',
-    label: 'Oyo'
-  },
-  {
-    value: 'Plateau',
-    label: 'Plateau'
-  },
-  {
-    value: 'Rivers',
-    label: 'Rivers'
-  },
-  {
-    value: 'Sokoto',
-    label: 'Sokoto'
-  },
-  {
-    value: 'Taraba',
-    label: 'Taraba'
-  },
-  {
-    value: 'Yobe',
-    label: 'Yobe'
-  },
-  {
-    value: 'Zamfara',
-    label: 'Zamfara'
-  },
+  }
 ];
 
 const useStyles = makeStyles(() => ({
   root: {}
 }));
 
-const ProfileDetails = ({ className, ...rest }) => {
+const BankDetails = ({ className, ...rest }) => {
   const classes = useStyles();
   const [values, setValues] = useState({
     firstName: 'Ninyo',
     lastName: 'Esther',
-    email: 'afolabi@gmail.com',
+    email: 'demo@devias.io',
     phone: '',
     state: 'Borno',
     country: 'Nigeria',
@@ -343,8 +227,8 @@ const ProfileDetails = ({ className, ...rest }) => {
   );
 };
 
-ProfileDetails.propTypes = {
+BankDetails.propTypes = {
   className: PropTypes.string
 };
 
-export default ProfileDetails;
+export default BankDetails;
