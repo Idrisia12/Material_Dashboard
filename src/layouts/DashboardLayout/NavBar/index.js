@@ -149,7 +149,7 @@ const NavBar = ({ onMobileClose, openMobile }) => {
      >
       <ExitToAppIcon /> 
           </Link>
-          <Link href="https://materialdash.netlify.app/app/dashboard" onClick={preventDefault}>LOGOUT
+          <Link href="https://quadag.netlify.app/" onClick={preventDefault}>LOGOUT
         </Link>
      </Button>
        </Box>
