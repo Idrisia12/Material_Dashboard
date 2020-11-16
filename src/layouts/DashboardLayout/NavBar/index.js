@@ -144,13 +144,10 @@ const NavBar = ({ onMobileClose, openMobile }) => {
      <Button
        color="primary"
        component="a"
-       href="https://react-material-kit.devias.io"
+       href="https://quadag.netlify.app/"
        variant="contained"
      >
-      <ExitToAppIcon /> 
-          </Link>
-          <Link href="https://quadag.netlify.app/">LOGOUT
-        </Link>
+      <ExitToAppIcon />LOGOUT
      </Button>
        </Box>
       </Box>
