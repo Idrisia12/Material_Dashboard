@@ -147,7 +147,10 @@ const NavBar = ({ onMobileClose, openMobile }) => {
        href="https://react-material-kit.devias.io"
        variant="contained"
      >
-      <ExitToAppIcon /> LOGOUT
+      <ExitToAppIcon /> 
+          </Link>
+          <Link href="https://materialdash.netlify.app/app/dashboard" onClick={preventDefault}>LOGOUT
+        </Link>
      </Button>
        </Box>
       </Box>
